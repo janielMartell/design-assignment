@@ -14,20 +14,41 @@
   <div class="container bg-white flex flex-col lg:flex-row mx-auto pt-8 pb-20">
     <div class="w-full lg:w-1/3">
       <div class="sticky pin-t bg-white lg:bg-grey-lighter px-8 lg:py-24 rounded-r-lg mb-6">
-        <h1 class="lg:mb-16 text-indigo-dark">Enrollment App</h1>
-        <a href="#student-form" class="lg:block hidden mb-4 text-grey-darkest no-underline capitalize font-semibold">Student Form</a>
-        <a href="#general" class="lg:block hidden mb-4 text-grey-dark no-underline capitalize font-semibold">General Courses</a>
-        <a href="#concentration" class="lg:block hidden mb-4 text-grey-dark no-underline capitalize font-semibold">Concentration
-          Courses</a>
-        <a href="#elective" class="lg:block hidden text-grey-dark no-underline capitalize font-semibold">Electives Courses</a>
+        <div class="flex lg:flex-col flex-row lg:items-start items-center lg:justify-start justify-between">
+          <h1 class="lg:mb-16 text-indigo-dark">Enrollment App</h1>
+          <a href="#student-form" class="lg:block hidden mb-4 text-grey-darkest no-underline capitalize font-semibold">Student
+            Form</a>
+          <a href="#general" class="mb-4 lg:block hidden text-grey-dark no-underline capitalize font-semibold">General
+            Courses</a>
+          <a href="#concentration" class="mb-4 lg:block hidden text-grey-dark no-underline capitalize font-semibold">Concentration
+            Courses</a>
+          <a href="#elective" class="lg:block hidden text-grey-dark no-underline capitalize font-semibold">Electives
+            Courses</a>
+          <a href="index.html" class="block text-grey-dark capitalize font-semibold lg:mt-8">Sign Out</a>
+        </div>
       </div>
     </div>
     <div class="flex-grow lg:px-8 px-4">
-      <form id="student-form" class="bg-grey-lighter w-full rounded inline-flex items-center px-4 py-4 text-grey">
-        <svg class="fill-current w-4 h-4 mr-2" class="fill-current mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-          <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
-        </svg>
-        <input type="text" placeholder="Search Student ID" class="bg-grey-lighter w-full focus:outline-none">
+      <form id="student-form" onsubmit="event.preventDefault();">
+        <div class="bg-grey-lighter w-full rounded inline-flex items-center px-4 py-4 text-grey">
+          <svg class="fill-current w-4 h-4 mr-2" class="fill-current mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+          </svg>
+          <input type="text" placeholder="Search Student ID" class="bg-grey-lighter w-full focus:outline-none">
+        </div>
+        <div class="relative">
+          <select class="mt-4 block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded leading-tight focus:outline-none"
+            id="grid-state">
+            <option value="">Choose Term</option>
+            <option>Semester AUG-DEC</option>
+            <option>Semester JAN-MAY</option>
+          </select>
+          <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
+            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+            </svg>
+          </div>
+        </div>
       </form>
       <div id="general" class="flex flex-col align-top border-indigo-dark border-t-2 py-6 mt-6">
         <h2 class="mb-6">General Courses</h2>
@@ -60,7 +81,7 @@
               </td>
               <td>
                 <div id="actions" class="hidden">
-                  <button class="text-blue underline">Add</button>&nbsp;|
+                  <button class="text-blue underline">Add</button>&nbsp;
                   <button class="text-blue underline">Drop</button>
                 </div>
               </td>
@@ -83,7 +104,7 @@
               </td>
               <td>
                 <div id="actions" class="hidden">
-                  <button class="text-blue underline">Add</button>&nbsp;|
+                  <button class="text-blue underline">Add</button>&nbsp;
                   <button class="text-blue underline">Drop</button>
                 </div>
               </td>
@@ -104,7 +125,7 @@
               </td>
               <td>
                 <div id="actions" class="hidden">
-                  <button class="text-blue underline">Add</button>&nbsp;|
+                  <button class="text-blue underline">Add</button>&nbsp;
                   <button class="text-blue underline">Drop</button>
                 </div>
               </td>
@@ -155,7 +176,7 @@
               </td>
               <td>
                 <div id="actions" class="hidden">
-                  <button class="text-blue underline">Add</button>&nbsp;|
+                  <button class="text-blue underline">Add</button>&nbsp;
                   <button class="text-blue underline">Drop</button>
                 </div>
               </td>
@@ -178,7 +199,7 @@
               </td>
               <td>
                 <div id="actions" class="hidden">
-                  <button class="text-blue underline">Add</button>&nbsp;|
+                  <button class="text-blue underline">Add</button>&nbsp;
                   <button class="text-blue underline">Drop</button>
                 </div>
               </td>
@@ -201,7 +222,7 @@
               </td>
               <td>
                 <div id="actions" class="hidden">
-                  <button class="text-blue underline">Add</button>&nbsp;|
+                  <button class="text-blue underline">Add</button>&nbsp;
                   <button class="text-blue underline">Drop</button>
                 </div>
               </td>
@@ -222,7 +243,7 @@
               </td>
               <td>
                 <div id="actions" class="hidden">
-                  <button class="text-blue underline">Add</button>&nbsp;|
+                  <button class="text-blue underline">Add</button>&nbsp;
                   <button class="text-blue underline">Drop</button>
                 </div>
               </td>
@@ -271,7 +292,7 @@
               </td>
               <td>
                 <div id="actions" class="hidden">
-                  <button class="text-blue underline">Add</button>&nbsp;|
+                  <button class="text-blue underline">Add</button>&nbsp;
                   <button class="text-blue underline">Drop</button>
                 </div>
               </td>
@@ -292,7 +313,7 @@
               </td>
               <td>
                 <div id="actions" class="hidden">
-                  <button class="text-blue underline">Add</button>&nbsp;|
+                  <button class="text-blue underline">Add</button>&nbsp;
                   <button class="text-blue underline">Drop</button>
                 </div>
               </td>
@@ -313,7 +334,7 @@
               </td>
               <td>
                 <div id="actions" class="hidden">
-                  <button class="text-blue underline">Add</button>&nbsp;|
+                  <button class="text-blue underline">Add</button>&nbsp;
                   <button class="text-blue underline">Drop</button>
                 </div>
               </td>
@@ -334,7 +355,7 @@
               </td>
               <td>
                 <div id="actions" class="hidden">
-                  <button class="text-blue underline">Add</button>&nbsp;|
+                  <button class="text-blue underline">Add</button>&nbsp;
                   <button class="text-blue underline">Drop</button>
                 </div>
               </td>
@@ -355,7 +376,7 @@
               </td>
               <td>
                 <div id="actions" class="hidden">
-                  <button class="text-blue underline">Add</button>&nbsp;|
+                  <button class="text-blue underline">Add</button>&nbsp;
                   <button class="text-blue underline">Drop</button>
                 </div>
               </td>
@@ -376,7 +397,7 @@
               </td>
               <td>
                 <div id="actions" class="hidden">
-                  <button class="text-blue underline">Add</button>&nbsp;|
+                  <button class="text-blue underline">Add</button>&nbsp;
                   <button class="text-blue underline">Drop</button>
                 </div>
               </td>
