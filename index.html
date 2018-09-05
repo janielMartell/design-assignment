@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Enrollment</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-grey-darkest bg-grey-lighter">
+  <div class="flex items-center h-screen w-full">
+    <div class="w-full max-w-xs mx-auto">
+      <form class="bg-white shadow-md px-8 pt-6 pb-8 mb-4" onsubmit="event.preventDefault(); window.location.href = 'app.html'">
+        <div class="mb-4">
+          <label class="block text-grey-darker text-sm font-bold mb-2" for="Employee ID">
+            Employee ID
+          </label>
+          <input autofocus class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+            id="Employee ID" type="text" placeholder="Employee ID">
+        </div>
+        <div class="mb-6">
+          <label class="block text-grey-darker text-sm font-bold mb-2" for="Password">
+            Password
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+            id="Password" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+        </div>
+        <button class="shadow w-full font-bold bg-indigo-dark hover:bg-indigo-light text-white antialiased py-2 rounded focus:outline-none focus:shadow-outline">
+          Sign in
+        </button>
+      </form>
+      <p class="text-center text-grey text-xs">
+        ©2018 JM Development All rights reserved. <a class="text-grey" href="https://tailwindcss.com/docs/examples/forms/">source</a>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
