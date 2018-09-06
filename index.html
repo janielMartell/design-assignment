@@ -14,21 +14,18 @@
   <div class="flex items-center h-screen w-full">
     <div class="w-full max-w-xs mx-auto">
       <form class="bg-white shadow-md px-8 pt-6 pb-8 mb-4" onsubmit="event.preventDefault(); window.location.href = 'app.html'">
-        <div class="mb-4">
-          <label class="block text-grey-darker text-sm font-bold mb-2" for="Employee ID">
-            Employee ID
-          </label>
-          <input autofocus class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
-            id="Employee ID" type="text" placeholder="Employee ID">
-        </div>
-        <div class="mb-6">
-          <label class="block text-grey-darker text-sm font-bold mb-2" for="Password">
-            Password
-          </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
-            id="Password" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
-        </div>
-        <button class="shadow w-full font-bold bg-indigo-dark hover:bg-indigo-light text-white antialiased py-2 rounded focus:outline-none focus:shadow-outline">
+        <h1 class="text-indigo-dark mb-4">Enrollment App</h1>
+        <label class="block text-grey-darker text-sm font-bold mb-2" for="Student ID">
+          Student ID
+        </label>
+        <input autofocus class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline mb-4"
+          type="text" placeholder="X00000000">
+        <label class="block text-grey-darker text-sm font-bold mb-2" for="Password">
+          Password
+        </label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline mb-6"
+          id="Password" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+        <button class="w-full font-semibold antialiased bg-indigo-dark hover:bg-indigo text-white py-3 rounded focus:outline-none">
           Sign in
         </button>
       </form>
