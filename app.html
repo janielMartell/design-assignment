@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Enrollment</title>
+  <title>Enrollment App</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +13,7 @@
 <body class="text-grey-darkest bg-grey-light">
   <div class="container bg-white flex flex-col lg:flex-row mx-auto pt-8 pb-20">
     <div class="w-full lg:w-1/4 lg:border-r-2 border-grey-lighter">
-      <div class="sticky pin-t bg-white px-8 lg:pt-24 mb-6">
+      <div class="sticky pin-t bg-white px-2 lg:px-8 lg:pt-24 mb-6">
         <div class="flex lg:flex-col flex-row lg:items-start items-center lg:justify-start justify-between">
           <h1 class="lg:mb-16 text-indigo-dark">Enrollment App</h1>
           <a href="#student-form" class="lg:block border-b-2 border-indigo hidden mb-4 text-grey-darkest no-underline capitalize font-semibold">Student
@@ -417,7 +417,12 @@
           </tfoot>
         </table>
       </div>
-      <p class="text-center text-grey mt-10">©2018 JM Development All rights reserved.</p>
+      <div class="border-t-2 border-indigo py-2 flex justify-between flex-col-reverse md:flex-row">
+        <p class="text-grey mt-4 md:mt-2 text-center ">©2018 JM Development All rights reserved.</p>
+        <button onclick="window.location.href = 'success.html'" class="font-semibold antialiased bg-indigo-dark hover:bg-indigo text-white py-2 px-4 rounded focus:outline-none">
+          Submit
+        </button>
+      </div>
     </div>
   </div>
 </body>
